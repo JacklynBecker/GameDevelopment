@@ -6,7 +6,8 @@ public class BallMovement : MonoBehaviour
 {
     //Ball movement script will trigger scoring functions as it hits a goal 
     //Const Strings
-    private const string PlayerTag="Player";
+    private const string Player1Tag="Player1";
+    private const string Player2Tag="Player2";
     private const string player1GoalTag="Player1Goal";
     private const string player2GoalTag="Player2Goal";
 
@@ -22,10 +23,18 @@ public class BallMovement : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTag(PlayerTag))
+        if(other.gameObject.CompareTag(Player1Tag))
         {
             //bounce off player paddle
             HandlePlayerCollision(other);
+            UiManager.Instance.PaddleColourChange(Player.Player1);
+        }
+        else if(other.gameObject.CompareTag(Player2Tag))
+        {
+            //bounce off player paddle
+            HandlePlayerCollision(other);
+            UiManager.Instance.PaddleColourChange(Player.Player2);
+
         }
         else if(other.gameObject.CompareTag(player1GoalTag))
         {

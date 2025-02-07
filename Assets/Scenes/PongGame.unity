@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 135312612}
   m_Layer: 0
   m_Name: paddle_left
-  m_TagString: Player
+  m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1305,6 +1305,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player1ScoreText: {fileID: 1405770089}
   Player2ScoreText: {fileID: 1049174944}
+  Player1Paddle: {fileID: 135312608}
+  Player2Paddle: {fileID: 2136673613}
 --- !u!1 &1452710634
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1478,7 @@ GameObject:
   - component: {fileID: 2136673615}
   m_Layer: 0
   m_Name: paddle_right
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

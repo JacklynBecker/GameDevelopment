@@ -11,6 +11,9 @@ public class UiManager : MonoBehaviour
     public TextMeshProUGUI Player1ScoreText;
     public TextMeshProUGUI Player2ScoreText;
 
+    public SpriteRenderer Player1Paddle;
+    public SpriteRenderer Player2Paddle;
+
     private void Awake()
     {
         //Ensure that there is only one instance of gameManager
@@ -50,6 +53,19 @@ public class UiManager : MonoBehaviour
         {
             Player2ScoreText.text = "Player 2 Wins!";
             Player1ScoreText.text = "You Lose!";
+        }
+    }
+
+    public void PaddleColourChange(Player player)
+    {
+
+        if (player == Player.Player1)
+        {
+            Player1Paddle.material.color = UnityEngine.Random.ColorHSV();
+        }
+        else if (player == Player.Player2)
+        {
+            Player2Paddle.material.color = UnityEngine.Random.ColorHSV();
         }
     }
 }
