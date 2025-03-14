@@ -17457,3 +17457,4 @@ spaceGame/TopDownShooter/Library/Artifacts/* filter=lfs diff=lfs merge=lfs -text
 /midterm/BrickBreaker/Library/Artifacts/fe/feb4b40b8b85a08578800f62ef27ab08 filter=lfs diff=lfs merge=lfs -text
 /midterm/BrickBreaker/Library/Artifacts/ff/ffd35d919235ff98453dbcfce40b1cdc filter=lfs diff=lfs merge=lfs -text
 /midterm/BrickBreaker/Temp/FSTimeGet-7f1df1565364a4eceae0b257b7a7d5fa filter=lfs diff=lfs merge=lfs -text
+/midterm/BrickBreaker/Library/expandedItems filter=lfs diff=lfs merge=lfs -text
